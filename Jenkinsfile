@@ -20,6 +20,7 @@ pipeline {
       }
   steps {
             sh 'printf "executing step2"'
+            echo 'Test'
         }
  }
  }
