@@ -16,7 +16,7 @@ pipeline {
                                 branch 'master'
                         }
                         steps {
-                                echo 'I am master'
+                                echo 'I am master brach'
                         }
                 }
         }
