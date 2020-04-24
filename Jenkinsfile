@@ -1,7 +1,7 @@
 pipeline {
         agent any
         triggers {
-                cron('H */4 * * *')
+                pollSCM('H */4 * * *')
         }
         parameters {
                 string(name: 'NAME',defaultValue: 'jenkinstraining',description: 'please enter your name')
