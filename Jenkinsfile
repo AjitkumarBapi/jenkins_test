@@ -20,7 +20,8 @@ pipeline {
       }
   steps {
             sh 'printf "executing step2"'
-            echo 'Testing'
+            echo 'Testing my jenkin'
+            sh 'pwd'
         }
  }
  }
