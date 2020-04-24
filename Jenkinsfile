@@ -1,25 +1,23 @@
 pipeline {
         agent any
         stages {
-                stage('devprd') {
+                stage('devmaster') {
                         when {
-                                anyof {
-                                        branch 'master';branch 'development'
+                                anyOf {
+                                        branch 'master'; branch 'development'
                                 }
-                                steps{
-                                        echo 'i am either master or dev branch'
-                                }
-                      
+                        }
+                        steps {
+                               echo 'I am either mater or development branch'
+                        }
                 }
-                        stage('master') {
-                                when {
-                                        branch 'master'
-                                }
-                                steps {
-                                        echo 'i am master'
-                                }
+                stage('master') {
+                        when {
+                                branch 'master'
+                        }
+                        steps {
+                                echo 'I am master'
                         }
                 }
         }
 }
-        
