@@ -1,11 +1,11 @@
-abcd = ['a','b','c','d']
-node('master') {
+adcd = ['a', 'b', 'c', 'd']
+node ('master') {
         stage('testing loop') {
-                echo_all (abcd)
+                echo_all(adcd)
         }
 }
 def echo_all(list) {
-        list.each {item ->
-                sh "This is ${item}"
+        for (int i = 0; i < list.size(); i++) {
+        sh " echo This is ${list[i]}"
         }
 }
