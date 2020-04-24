@@ -1,5 +1,4 @@
 
-sathishbabu  12:50 PM
 node {
         timestamps {
                 ansiColor("xterm") {
