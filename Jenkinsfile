@@ -1,4 +1,4 @@
-node {
+ node {
     
    def mvnHome
    stage('Preparation') { // for display purposes
@@ -16,7 +16,7 @@ node {
       // Run the maven build
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' -f api-gateway/pom.xml -Dmaven.test.failure.ignore clean package"
-         sh "echo my current working directory"
+         sh "echo my present current working directory"
          sh "pwd"
       } else {
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
