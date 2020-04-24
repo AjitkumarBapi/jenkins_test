@@ -1,4 +1,4 @@
-adcd = ['a', 'b', 'c', 'd']
+adcd = ['a', 'b', 'c', 'd','e']
 node ('master') {
         stage('testing loop') {
                 echo_all(adcd)
