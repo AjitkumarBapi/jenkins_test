@@ -3,17 +3,16 @@ pipeline {
         stages {
                 stage('input') {
                         input {
-                               message "is it ok to deploy code in prod"
+                                message "IS It ok to deploy the code on production"
                                 ok "Yes"
                                 submitter "admin"
-                                parameters{
-                                        string (naem: 'USER',defaultValue: 'admin',description: 'administrater')
+                                parameters {
+                                        string(name: 'USER', defaultValue: 'admin', description: 'administrator')
                                 }
                         }
-                        stpes {
-                                echo "${USER}approved. proceeding with prod deployment"
+                        steps {
+                                echo "${USER} approved, proceeding with prodution deployment"
                         }
-                        
                 }
         }
 }
