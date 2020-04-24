@@ -11,7 +11,7 @@ pipeline {
                         parallel{
                                 stage('parallelstage1'){
                                         steps {
-                                                echo "This is parallelstage 1"
+                                                echo "This is parallelstage 11"
                                         }
                                 }
                                 stage('parallelstage2'){
