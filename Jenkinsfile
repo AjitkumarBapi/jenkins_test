@@ -1,7 +1,7 @@
 pipeline {
         agent any
         parameters {
-                string(name: 'Name',defaultValue: 'jenkinstraining',description: 'please enter your name')
+                string(name: 'NAME',defaultValue: 'jenkinstraining',description: 'please enter your name')
                 text(name: 'BIO',defaultValue: '',description: 'please say something  about you')
                 choice(name: 'CHOICE',choices: ['one','two','three'],description: 'please choose one')
                 booleanParam(name: 'BOOLEAN',defaultValue: true,description: 'pls select boolean val')
