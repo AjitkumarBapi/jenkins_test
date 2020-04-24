@@ -2,6 +2,7 @@ pipeline {
     agent any
     
     options {
+        timestamp()
         ansiColor("xtern")
     }
  stages{
