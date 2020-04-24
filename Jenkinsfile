@@ -1,15 +1,26 @@
 pipeline {
     agent any
+    
+    options {
+         timestamps()
+        ansiColor("xtern")
+    }
  stages{
-  stage("stage1") {
+  stage("step1") {
+      options{
+          timeout(time: 1, unit: "MINUTES")
+      }
   steps {
-            echo "testing stage 1"
+            sh 'printf "executing step1'
         }
  }
- stage("stage2") {
-            steps {
-                echo "testing stage 2"
-            }
+      stage("step2") {
+      options{
+          timeout(time: 2, unit: "MINUTES")
+      }
+  steps {
+            sh 'printf "executing step2'
         }
+ }
  }
 }
