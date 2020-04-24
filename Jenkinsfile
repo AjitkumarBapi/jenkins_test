@@ -6,6 +6,6 @@ node('master') {
 }
 def echo_all(list) {
         list.each {item ->
-                echo "This is &{item}"
+                echo "This is ${item}"
         }
 }
