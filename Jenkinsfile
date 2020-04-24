@@ -8,7 +8,7 @@ pipeline {
                 text(name: 'BIO',defaultValue: '',description: 'please say something  about you')
                 choice(name: 'CHOICE',choices: ['one','two','three'],description: 'please choose one')
                 booleanParam(name: 'BOOLEAN',defaultValue: true,description: 'pls select boolean val')
-                password(name: 'PASSWORD',defaultValue: 'test123', description: 'pls enter pwd')
+                password(name: 'PASSWORD',defaultValue: 'Test123', description: 'pls enter pwd')
         }
         stages {
                 stage('print values'){
